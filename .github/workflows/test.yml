@@ -5,5 +5,9 @@ jobs:
   faire-un-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Afficher hello
-        run: echo "Bienvenue sur Ubuntu de Github Action"
+      - name: Affichage des infos système
+        run: |
+          echo "Déclenché par PUSH"
+          uname -a
+          whoami
+          env | sort
